@@ -1,0 +1,26 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: darkgrey;
+}
+.columns{
+    padding: 15px;
+}
+.class{
+    font-size: larger;
+    font-weight: lighter;
+    text-shadow: 1px 0 2px black;
+}
+img{
+   width: 200px;
+   height: 300px;
+}
+.hide{
+    visibility: hidden;
+}
+#continue{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px 0 0 0;
+}

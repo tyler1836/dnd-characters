@@ -1,51 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>FFX Counter</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Document</title>
 </head>
+
 <body>
-    <h1>Catch them all</h1>
-    <div>
-        <ul>
-            <h3>Omega Ruins</h3>
-            <li>Black Element<button id="clickMe"></button></li>
-            <li>Helma<button id="clickMe"></button></li>
-            <li>Spirit<button id="clickMe"></button></li>
-            <li>Machea<button id="clickMe"></button></li>
-            <li>Master Tonberry<button id="clickMe"></button></li>
-            <li>Varuna<button id="clickMe"></button></li>
-        </ul>
-    </div>
-    <div>
-        <ul>
-            <h3>Inside Sin</h3>
-            <li>Adamantoise<button id="clickMe"></button></li>
-            <li>Great Malboro<button id="clickMe"></button></li>
-            <li>Wraith<button id="clickMe"></button></li>
-            <li>Demonolith<button id="clickMe"></button></li>
-            <li>Exoray<button id="clickMe"></button></li>
-            <li>Gemini Sword<button id="clickMe"></button></li>
-            <li>Gemini Club<button id="clickMe"></button></li>
-            <li>Barbatos<button id="clickMe"></button></li>
-            <li>Behemoth King<button id="clickMe"></button></li>
-        </ul>
-    </div>
-    <div>
-        <h3>Spheres</h3>
-            <ul>
-                <li>Agility<button id="clickMe"></button></li>
-                <li>Accuracy<button id="clickMe"></button></li>
-                <li>Magic<button id="clickMe"></button></li>
-                <li>Defense<button id="clickMe"></button></li>
-                <li>Evasion<button id="clickMe"></button></li>
-            </ul>
+    <main>
+        <div id="continue">
+            <!-- <a href="playerpage.html" class="button is-large is-loading is-link hide">Ready</a> -->
+        </div>
+        <div class="columns">
+            <div class="marauder column is-4">
+                <img src="./assets/marauder.jpeg" alt="" srcset="">
+                <h5 class="class" style="color: red; text-shadow: 1px 0 2px antiquewhite;">Marauder</h5>
+                <p>Dual wield axes to cut through any in your path.</p>
+                <button class="button is-link marauder">Select Class</button>
 
-
-    </div>
-    <script src="script.js" ></script>
+            </div>
+            <div class="squire column is-4">
+                <img src="./assets/squire.jpeg" alt="" srcset="">
+                <h5 class="class" style="color: aqua;">Squire</h5>
+                <p>With high morals and leadership qualities. You wield a sword and shield to protect your allies.</p>
+                <button class="button is-link squire">Select Class</button>
+            </div>
+            <div class="fighter column is-4">
+                <img src="./assets/fighter.jpeg" alt="" srcset="">
+                <h5 class="class" style="color: orange;">Fighter</h5>
+                <p>Nothing like using your bare fist to pummel your foes.</p>
+                <button class="button is-link fighter">Select Class</button>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="pikeman column">
+                <img src="./assets/pikeman.jpeg" alt="" srcset="">
+                <h5 class="class" style="color: purple; text-shadow: 1px 0 2px antiquewhite;">Pikeman</h5>
+                <p>One of the most athletic of warriors you never leave your trusty lance behind.</p>
+                <button class="button is-link">Select Class</button>
+            </div>
+            <div class="archer column">
+                <img src="./assets/archer.jpeg" alt="" srcset="">
+                <h5 class="class" style="color: bisque;">Archer</h5>
+                <p>Stay out of danger but deal deadly strikes with your long range bow.</p>
+                <button class="button is-link">Select Class</button>
+            </div>
+            <div class="mage column">
+                <img src="./assets/mage.jpeg" alt="" srcset="">
+                <h5 class="class" style="color: blueviolet; text-shadow: 1px 0 2px plum;">Mage</h5>
+                <p>Years of training have opened your eyes to elemental maniuplation.</p>
+                <button class="button is-link">Select Class</button>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="student column is-2">
+                <img src="./assets/student.jpeg" alt="" srcset="">
+                <h5 class="class" style="color: cornflowerblue; text-shadow: 1px 0 2px whitesmoke;">Student</h5>
+                <p>Years of studying have prepared you mentally for anything that comes your way.</p>
+                <button class="button is-link">Select Class</button>
+            </div>
+        </div>
+    </main>
+    <script src='assets/script.js'></script>
 </body>
+
 </html>
