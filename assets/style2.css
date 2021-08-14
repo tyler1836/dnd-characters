@@ -1,0 +1,67 @@
+body{
+    background-color: rgb(41, 32, 32);
+}
+main h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+    color: antiquewhite;
+    font-weight: lighter;
+    text-shadow: 1px 1px 2px black;
+}
+textarea{
+    background-color: darkgray;
+    border:3px solid rgb(240, 231, 185);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    max-width: 80%;
+}
+article{
+    background-color: rgb(88, 86, 80);
+}
+button.is-primary{
+    margin-left: 40px;
+    border-radius: 25px;
+    padding-right: 125px;
+    text-indent: 85px;
+}
+button.is-link{
+    margin-left: 80px;
+    border-radius: 25px;
+    padding-right: 125px;
+    text-indent: 85px;
+}
+button.is-info{
+    margin-left: 120px;
+    border-radius: 25px;
+    padding-right: 125px;
+    text-indent: 85px;
+}
+button.is-success{
+    margin-left: 160px;
+    border-radius: 25px;
+    padding-right: 125px;
+    text-indent: 85px;
+}
+button.is-warning{
+    margin-left: 200px;
+    border-radius: 25px;
+    padding-right: 125px;
+    text-indent: 85px;
+}
+button.is-danger{
+    margin-left: 240px;
+    border-radius: 25px;
+    padding-right: 125px;
+    text-indent: 85px;
+}
+span{
+    margin-left: 30px;
+    display: inline-block;
+    padding: 20px;
+    font-family: fantasy;
+    font-weight: lighter;
+    background-color: papayawhip;
+    border-radius: 25px;
+    font-size: larger;
+
+}
