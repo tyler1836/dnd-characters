@@ -17,10 +17,36 @@ img{
 .hide{
     visibility: hidden;
 }
+.sticky{
+    font-size: 30px;
+    color: wheat;
+    text-shadow: 2px 2px 10px black;
+    margin: 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: 25px;
+}
+.sticky1{
+    margin-top: 120px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: 25px;
+    box-shadow: 2px 2px 10px black;
+}
+.sticky2{
+    margin-top: 250px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: 25px;
+    box-shadow: 2px 2px 10px black;
+}
 #continue{
     display: flex;
     justify-self: center;
     align-items: center;
     justify-content: space-around;
-    padding: 100px 0 0 0;
+    padding: 100px;
 }
