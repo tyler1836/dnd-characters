@@ -10,6 +10,55 @@ const btn8 = document.getElementById('is-info')
 const btn10 = document.getElementById('is-success')
 const btn12 = document.getElementById('is-warning')
 const btn20 = document.getElementById('is-danger')
+const level = document.getElementById('level')
+const health = document.getElementById('health')
+const strength = document.getElementById('str')
+const dexterity = document.getElementById('dex')
+const athletics = document.getElementById('ath')
+const knowledge = document.getElementById('know')
+const wisdom = document.getElementById('wisdom')
+const speed = document.getElementById('speed')
+const levelUp = document.getElementById('up')
+
+var statsArr = [level, health, strength, dexterity, athletics, knowledge, wisdom, speed]
+var levelCtr = 0;
+var healthC = 20;
+var strengthC = 8;
+var dexterityC = 8;
+var athleticsC = 8;
+var knowledgeC = 8;
+var wisdomC = 8;
+var speedC = 8;
+speed.innerHTML = speedC;
+
+levelUp.addEventListener('click', function(){
+    if(levelCtr <= 99){
+        levelCtr ++;
+    }
+    else{
+        levelUp.disabled = true;
+    }
+    healthC = healthC + Math.floor(Math.random() * 12 + 2);
+    strengthC = strengthC + Math.floor(Math.random() * 6 + 1);
+    dexterityC = dexterityC + Math.floor(Math.random() * 6 + 1);
+    athleticsC = athleticsC + Math.floor(Math.random() * 6 + 1);
+    knowledgeC = knowledgeC + Math.floor(Math.random() * 6 + 1);
+    wisdomC = wisdomC + Math.floor(Math.random() * 6 + 1);
+    strength.innerHTML = strengthC;
+    health.innerHTML = healthC;
+    level.innerHTML = levelCtr;
+    dexterity.innerHTML = dexterityC;
+    athletics.innerHTML = athleticsC;
+    knowledge.innerHTML = knowledgeC;
+    wisdom.innerHTML = wisdomC;
+    if(levelCtr.toString().includes('5' || '0')){
+        speedC = speedC + Math.floor(Math.random() * 4 + 1);
+        return speed.innerHTML = speedC; 
+    }
+    statsArr.forEach(function(){
+        localStorage.setItem('stats', statsArr.innerHTML)
+    })
+})
 
 btn4.addEventListener('click', function (){
     var dice4 = Math.floor(Math.random() * 4 + 1);
@@ -39,5 +88,8 @@ btn12.addEventListener('click', function (){
 btn20.addEventListener('click', function (){
     var dice20 = Math.floor(Math.random() * 20 + 1);
     d20.innerHTML = dice20;
+    if(dice20 == 1){
+        return d20.innerHTML = dice20 + ' Wow you really fucked this one up didn\'t you.'
+    }
 
 })

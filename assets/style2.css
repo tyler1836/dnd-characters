@@ -1,12 +1,34 @@
 body{
     background-color: rgb(41, 32, 32);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 main h2{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: x-large;
     color: antiquewhite;
     font-weight: lighter;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 1px 1px 2px darkgray;
+}
+ul li{
+    font-weight: lighter;
+    font-size: 20px;
+    color: beige;
+    line-height: 2rem;
+}
+#stats{
+    font-size: 30px;
+    text-decoration:underline wheat ;
+    text-shadow: 1px 1px 2px darkgray;
+}
+main ul li p{
+    display: inline-block;
+}
+#up{
+    background-color: rgb(112, 51, 27);
+    color: wheat;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 15px;
+    box-shadow: 0 0 8px wheat;
 }
 textarea{
     background-color: darkgray;
@@ -17,51 +39,25 @@ textarea{
 }
 article{
     background-color: rgb(88, 86, 80);
-}
-button.is-primary{
-    margin-left: 40px;
     border-radius: 25px;
-    padding-right: 125px;
-    text-indent: 85px;
+    max-width: 80%;
 }
-button.is-link{
-    margin-left: 80px;
+.button{
+    margin: 8px;
     border-radius: 25px;
-    padding-right: 125px;
-    text-indent: 85px;
+    padding: 25px;
+    box-shadow: 5px 5px 10px black;
 }
-button.is-info{
-    margin-left: 120px;
-    border-radius: 25px;
-    padding-right: 125px;
-    text-indent: 85px;
-}
-button.is-success{
-    margin-left: 160px;
-    border-radius: 25px;
-    padding-right: 125px;
-    text-indent: 85px;
-}
-button.is-warning{
-    margin-left: 200px;
-    border-radius: 25px;
-    padding-right: 125px;
-    text-indent: 85px;
-}
-button.is-danger{
-    margin-left: 240px;
-    border-radius: 25px;
-    padding-right: 125px;
-    text-indent: 85px;
-}
+
 span{
     margin-left: 30px;
     display: inline-block;
     padding: 20px;
-    font-family: fantasy;
-    font-weight: lighter;
+    color: lightblack;
+    font-weight: bolder;
     background-color: papayawhip;
     border-radius: 25px;
     font-size: larger;
+    box-shadow: 5px 5px 10px black;
 
 }

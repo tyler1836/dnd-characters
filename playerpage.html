@@ -11,36 +11,60 @@
     <title>Character Sheet</title>
 </head>
 <body>
+    <div id="name">
+        <h1>Character Name</h1>
+    </div>
     <main class="columns">
         <div class="stats column is-one-third">
-        <h2>Stats</h2>
-        <textarea name="stats" id="playerStats" cols="75" rows="10"></textarea>
+        <ul>
+            <li id="stats">Stats</li>
+            <li>Level: <p id="level"></p></li>
+            <li>Health: <p id="health"></p></li>
+            <li>Strength: <p id="str"></p></li>
+            <li>Dexterity: <p id="dex"></p></li>
+            <li>Athletics: <p id="ath"></p></li>
+            <li>Knowledge: <p id="know"></p></li>
+            <li>Wisdom: <p id="wisdom"></p></li>
+            <li>Speed: <p id="speed"></p></li>
+        </ul>
+        <button id="up"><i class="fas fa-sun"></i>Level Up</button>
         </div>
         <div class="abilities column is-two-thirds">
             <h2>Abilities</h2>
-            <textarea name="abilities" id="playerAbilites" cols="150" rows="10"></textarea>
+            <textarea name="abilities" id="playerAbilites" cols="40" rows="10"></textarea>
         </div>
     </main>
     <article>
         <div>
         <button class="button is-primary is-large" id="is-primary"><i class="fas fa-dice-d4">D4</i></button><span id="d4"></span>
-        </div>
-        <div>
         <button class="button is-link is-large" id="is-link"><i class="fas fa-dice-d6">D6</i></button><span id="d6"></span>
-        </div>
-        <div>
         <button class="button is-info is-large" id="is-info"><i class="fas fa-dice-d8">D8</i></button><span id="d8"></span>
         </div>
         <div>
         <button class="button is-success is-large" id="is-success"><i class="fas fa-dice-d10">D10</i></button><span id="d10"></span>
-        </div>
-        <div>
         <button class="button is-warning is-large" id="is-warning"><i class="fas fa-dice-d12">D12</i></button><span id="d12"></span>
-        </div>
-        <div>
         <button class="button is-danger is-large" id="is-danger"><i class="fas fa-dice-d20">D20</i></button><span id="d20"></span>
         </div>
     </article>
+    <br>
+    <aside class="columns">
+        <div class="column is-one-third" id="gold">
+            <ul>
+                <li>Copper</li>
+                <li>Silver</li>
+                <li>Gold</li>
+                <li>Platinum</li>
+            </ul>
+        </div>
+        <div class = "column is-two-thirds" id = "bag">
+            <textarea name="bag" id="bagactual" cols="30" rows="10"></textarea>
+        </div>
+    </aside>
+    <footer>
+        <div>
+
+        </div>
+    </footer>
     <h2></h2>
     <script src="./assets/script2.js"></script>
 </body>
