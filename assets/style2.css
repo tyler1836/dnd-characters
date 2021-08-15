@@ -2,7 +2,13 @@ body{
     background-color: rgb(41, 32, 32);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-main h2{
+#name{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+h2{
     font-size: x-large;
     color: antiquewhite;
     font-weight: lighter;
@@ -49,7 +55,7 @@ article{
     box-shadow: 5px 5px 10px black;
 }
 
-span{
+article span{
     margin-left: 30px;
     display: inline-block;
     padding: 20px;
@@ -60,4 +66,15 @@ span{
     font-size: larger;
     box-shadow: 5px 5px 10px black;
 
+}
+.hide{
+    display: none;
+}
+aside button{
+    margin: 3px;
+    background-color: rgb(112, 51, 27);
+    color: wheat;
+    border-radius: 15px;
+    font-size: 15px;
+    box-shadow: 2px 2px 3px wheat;
 }
