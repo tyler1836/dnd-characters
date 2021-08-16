@@ -2,17 +2,19 @@ body{
     background-color: rgb(41, 32, 32);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-#name{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 15px;
-}
+
 h2{
     font-size: x-large;
     color: antiquewhite;
     font-weight: lighter;
     text-shadow: 1px 1px 2px darkgray;
+}
+#name{
+    display: flex;
+    font-size: xx-large;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
 }
 ul li{
     font-weight: lighter;
@@ -28,7 +30,7 @@ ul li{
 main ul li p{
     display: inline-block;
 }
-#up{
+#up, button{
     background-color: rgb(112, 51, 27);
     color: wheat;
     padding: 5px;
@@ -46,7 +48,7 @@ textarea{
 article{
     background-color: rgb(88, 86, 80);
     border-radius: 25px;
-    max-width: 80%;
+  
 }
 .button{
     margin: 8px;
@@ -56,19 +58,23 @@ article{
 }
 
 article span{
-    margin-left: 30px;
+    margin-top: 10px;
+    margin-left: 15px;
     display: inline-block;
-    padding: 20px;
+    padding: 10px;
     color: lightblack;
     font-weight: bolder;
     background-color: papayawhip;
-    border-radius: 25px;
+    border-radius: 50px;
     font-size: larger;
     box-shadow: 5px 5px 10px black;
 
 }
 .hide{
     display: none;
+}
+aside h2{
+    margin-right: 10px;
 }
 aside button{
     margin: 3px;
@@ -77,4 +83,27 @@ aside button{
     border-radius: 15px;
     font-size: 15px;
     box-shadow: 2px 2px 3px wheat;
+}
+
+@media screen and (max-width: 380px) {
+    article{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .button{
+        font-size: smaller;
+        padding: 8px;
+        margin: 2px;
+    }
+    article span{
+        font-size: smaller;
+        margin-left: 1px;
+    }
+}
+@media screen and (max-width: 325px) {
+    article{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
 }

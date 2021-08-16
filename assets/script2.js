@@ -20,35 +20,61 @@ const wisdom = document.getElementById('wisdom')
 const speed = document.getElementById('speed')
 const levelUp = document.getElementById('up')
 const divName = document.getElementById('name')
-const nameEl = document.getElementById('charName')
 
 
 
-var statsArr = [level, health, strength, dexterity, athletics, knowledge, wisdom, speed]
-var levelCtr = 0;
-var healthC = 20;
-var strengthC = 8;
-var dexterityC = 8;
-var athleticsC = 8;
-var knowledgeC = 8;
-var wisdomC = 8;
-var speedC = 8;
-speed.innerHTML = speedC;
+
+
+if (!localStorage.getItem('level')) {
+    var levelCtr = 1;
+    var healthC = 40;
+    var strengthC = 8;
+    var dexterityC = 8;
+    var athleticsC = 8;
+    var knowledgeC = 8;
+    var wisdomC = 8;
+    var speedC = 8;
+    localStorage.setItem('level', levelCtr);
+    localStorage.setItem('health', healthC);
+    localStorage.setItem('strength', strengthC);
+    localStorage.setItem('dexterity', dexterityC);
+    localStorage.setItem('athletics', athleticsC);
+    localStorage.setItem('knowledge', knowledgeC);
+    localStorage.setItem('wisdom', wisdomC);
+    localStorage.setItem('speed', speedC);
+}
 
 
 
-nameEl.addEventListener('click', function naming() {
-    var name = prompt('What is your characters name?')
-    if (name === "" || name === null) {
-        window.alert("Please enter a valid name!")
-        return naming();
+window.addEventListener('DOMContentLoaded', function naming() {
+    if (!localStorage.getItem('name')) {
+        name = prompt('What is your characters name?')
+        if ((name === "") || (name === null)) {
+            window.alert("Please enter a valid name!")
+            return naming();
+        }
     }
     var nameHeader = document.createElement('h2');
     nameHeader.innerHTML = name;
     divName.append(nameHeader)
-    nameEl.classList.add('hide')
+    localStorage.setItem('name', name)
 
-
+    strengthC = parseInt(localStorage.getItem('strength'));;
+    healthC = parseInt(localStorage.getItem('health'));;
+    levelCtr = parseInt(localStorage.getItem('level'));
+    dexterityC = parseInt(localStorage.getItem('dexterity'));
+    athleticsC = parseInt(localStorage.getItem('athletics'));
+    knowledgeC = parseInt(localStorage.getItem('knowledge'));
+    wisdomC = parseInt(localStorage.getItem('wisdom'));
+    speedC = parseInt(localStorage.getItem('speed'));
+    level.innerHTML = levelCtr;
+    health.innerHTML = healthC;
+    strength.innerHTML = strengthC;
+    dexterity.innerHTML = dexterityC;
+    athletics.innerHTML = athleticsC;
+    knowledge.innerHTML = knowledgeC;
+    wisdom.innerHTML = wisdomC;
+    speed.innerHTML = speedC;
 });
 
 
@@ -74,12 +100,19 @@ levelUp.addEventListener('click', function () {
     knowledge.innerHTML = knowledgeC;
     wisdom.innerHTML = wisdomC;
     if (levelCtr.toString().includes('5' || '0')) {
-        speedC = speedC + Math.floor(Math.random() * 4 + 1);
+        speedC = speedC + Math.floor(Math.random() * 4 + 2);
         return speed.innerHTML = speedC;
     }
-    statsArr.forEach(function () {
-        localStorage.setItem('stats', statsArr.innerHTML)
-    })
+    
+    localStorage.setItem('level', levelCtr);
+    localStorage.setItem('health', healthC);
+    localStorage.setItem('strength', strengthC);
+    localStorage.setItem('dexterity', dexterityC);
+    localStorage.setItem('athletics', athleticsC);
+    localStorage.setItem('knowledge', knowledgeC);
+    localStorage.setItem('wisdom', wisdomC);
+    localStorage.setItem('speed', speedC);
+    
 })
 
 btn4.addEventListener('click', function () {

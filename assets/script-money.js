@@ -15,53 +15,68 @@ const silverCtr = document.getElementById('silverAmt')
 const goldCtr = document.getElementById('goldAmt')
 const platCtr = document.getElementById('platAmt')
 
-var copperAmount = 0;
-var silverAmount = 0;
-var goldAmount = 0;
-var platAmount = parseInt(platCtr.innerText);
+if(!localStorage.getItem('copper')){
+var copperAmount = 10;
+var silverAmount = 5;
+var goldAmount = 3;
+var platAmount = 1;
 
+localStorage.setItem('copper', copperAmount)
+localStorage.setItem('silver', silverAmount)
+localStorage.setItem('gold', goldAmount)
+localStorage.setItem('plat', platAmount)
+}
 
 
 copperEl.addEventListener('click', function () {
     copperAmount++;
     copperCtr.innerText = copperAmount;
+    localStorage.setItem('copper', copperAmount)
 });
 
 copper5El.addEventListener('click', function () {
     copperAmount += 5;
     copperCtr.innerText = copperAmount;
+    localStorage.setItem('copper', copperAmount)
 });
 copper10El.addEventListener('click', function () {
     copperAmount += 10;
     copperCtr.innerText = copperAmount;
+    localStorage.setItem('copper', copperAmount)
 });
 
 silverEl.addEventListener('click', function () {
     silverAmount++;
     silverCtr.innerText = silverAmount;
+    localStorage.setItem('silver', silverAmount)
 });
 
 silver5El.addEventListener('click', function () {
     silverAmount += 5;
     silverCtr.innerText = silverAmount;
+    localStorage.setItem('silver', silverAmount)
 });
 
 silver10El.addEventListener('click', function () {
     silverAmount += 10;
     silverCtr.innerText = silverAmount;
+    localStorage.setItem('silver', silverAmount)
 });
 
 goldEl.addEventListener('click', function () {
     goldAmount++;
     goldCtr.innerText = goldAmount;
+    localStorage.setItem('gold', goldAmount)
 });
 gold5El.addEventListener('click', function () {
     goldAmount += 5;
     goldCtr.innerText = goldAmount;
+    localStorage.setItem('gold', goldAmount)
 });
 gold10El.addEventListener('click', function () {
     goldAmount += 10;
     goldCtr.innerText = goldAmount;
+    localStorage.setItem('gold', goldAmount)
 });
 
 platEl.addEventListener('click', function () {
@@ -81,5 +96,12 @@ plat10El.addEventListener('click', function () {
 });
 
 window.addEventListener('DOMContentLoaded', function(){
-    platCtr.innerText = localStorage.getItem('plat')
+    copperAmount = parseInt(localStorage.getItem('copper'))
+    silverAmount = parseInt(localStorage.getItem('silver'))
+    goldAmount = parseInt(localStorage.getItem('gold'))
+    platAmount = parseInt(localStorage.getItem('plat'))
+    copperCtr.innerText = copperAmount;
+    silverCtr.innerText = silverAmount;
+    goldCtr.innerText = goldAmount;
+    platCtr.innerText = platAmount;
 })
