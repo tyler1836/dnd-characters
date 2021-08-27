@@ -2,11 +2,12 @@ const bag = document.getElementById('bagactual');
 const abilities = document.getElementById('playerAbilities');
 const abilitiesSave = document.getElementById('abl');
 const bagSave = document.getElementById('bags');
+const del = document.getElementById('delete');
 
 
 abilitiesSave.addEventListener('click', function(){
-    var ableSave = abilities.value.split('\n');
-    localStorage.setItem('abilities', ableSave.join('\n'))
+    var ableSave = abilities.value;
+    localStorage.setItem('abilities', ableSave)
 })
 
 bagSave.addEventListener('click', function(){
@@ -17,7 +18,13 @@ bagSave.addEventListener('click', function(){
 window.addEventListener('DOMContentLoaded', function(){
     var ableLoad = localStorage.getItem('abilities');
     var bagLoad = localStorage.getItem('bag');
-    
-    bag.innerText = bagLoad;
-    abilities.innerText = ableLoad;
+    // ableLoad.concat('\n')
+    console.log(ableLoad)
+    bag.textContent = bagLoad;
+    abilities.textContent = ableLoad;
+})
+
+del.addEventListener('click', function(){
+    localStorage.clear();
+    location.reload();
 })
