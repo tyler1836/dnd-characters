@@ -18,7 +18,6 @@ bagSave.addEventListener('click', function(){
 window.addEventListener('DOMContentLoaded', function(){
     var ableLoad = localStorage.getItem('abilities');
     var bagLoad = localStorage.getItem('bag');
-    // ableLoad.concat('\n')
     console.log(ableLoad)
     bag.textContent = bagLoad;
     abilities.textContent = ableLoad;
