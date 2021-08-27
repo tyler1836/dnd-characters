@@ -1,0 +1,118 @@
+:root{
+    --primary-color: #2e0f38;
+    --secondary-color: #1a2c54;
+    --tertiary-color: #8351a8;
+    --fourth-color: #4d7b93;
+    --fifth-color: #b45dbb;
+
+}
+body{
+    background-color: var(--primary-color);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h2{
+    font-size: x-large;
+    color: var(--fourth-color);
+    font-weight: lighter;
+    text-shadow: 1px 1px 2px var(--fifth-color);
+}
+#name{
+    display: flex;
+    font-size: xx-large;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+ul li{
+    font-weight: lighter;
+    font-size: 20px;
+    color: var(--tertiary-color);
+    line-height: 2rem;
+}
+#stats{
+    font-size: 30px;
+    text-decoration:underline var(--tertiary-color) ;
+    text-shadow: 1px 1px 2px var(--fourth-color);
+}
+main ul li p{
+    display: inline-block;
+}
+#up, button{
+    background-color: var(--secondary-color);
+    color: var(--fifth-color);
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 15px;
+    box-shadow: 0 0 8px var(--tertiary-color);
+}
+textarea{
+    background-color: var(--tertiary-color);
+    border:3px solid var(--secondary-color);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    max-width: 80%;
+}
+article{
+    background-color: var(--secondary-color);
+    border-radius: 25px;
+    box-shadow: 7px 7px 7px var(--tertiary-color);
+  
+}
+.button{
+    margin: 8px;
+    border-radius: 25px;
+    padding: 25px;
+    box-shadow: 5px 5px 10px var(--primary-color);
+}
+
+article span{
+    margin-top: 10px;
+    margin-left: 15px;
+    display: inline-block;
+    padding: 10px;
+    color: var(--tertiary-color);
+    font-weight: bolder;
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    font-size: larger;
+    box-shadow: 5px 5px 10px black;
+
+}
+.hide{
+    display: none;
+}
+aside h2{
+    margin-right: 10px;
+}
+aside button{
+    margin: 3px;
+    background-color: var(--secondary-color);
+    color: var(--fifth-color);
+    border-radius: 15px;
+    font-size: 15px;
+    box-shadow: 2px 2px 3px var(--tertiary-color);
+}
+
+@media screen and (max-width: 380px) {
+    article{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .button{
+        font-size: smaller;
+        padding: 8px;
+        margin: 2px;
+    }
+    article span{
+        font-size: smaller;
+        margin-left: 1px;
+    }
+}
+@media screen and (max-width: 325px) {
+    article{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
+}

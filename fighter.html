@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/fighter.css">
+    <title>Character Sheet</title>
+</head>
+
+<body>
+    <div id="name">
+        
+    </div>
+    <main class="columns">
+        <div class="stats column is-one-third">
+            <ul>
+                <li id="stats">Stats</li>
+                <li>Level: <p id="level"></p>
+                </li>
+                <li>Health: <p id="health"></p>
+                </li>
+                <li>Strength: <p id="str"></p>
+                </li>
+                <li>Dexterity: <p id="dex"></p>
+                </li>
+                <li>Athletics: <p id="ath"></p>
+                </li>
+                <li>Knowledge: <p id="know"></p>
+                </li>
+                <li>Wisdom: <p id="wisdom"></p>
+                </li>
+                <li>Speed: <p id="speed"></p>
+                </li>
+            </ul>
+            <button id="up"><i class="fas fa-fist-raised"></i>Level Up</button>
+        </div>
+        <div class="abilities column is-two-thirds">
+            <h2>Abilities <button id="abl"><i class="far fa-save"></i></button></h2>
+            <textarea name="abilities" id="playerAbilities" cols="40" rows="10" ></textarea>
+        </div>
+    </main>
+    <article>
+        <div>
+            <button class="button is-primary is-medium" id="is-primary"><i class="fas fa-dice-d4">D4</i></button><span
+                id="d4"></span>
+            <button class="button is-link is-medium" id="is-link"><i class="fas fa-dice-d6">D6</i></button><span
+                id="d6"></span>
+            <button class="button is-info is-medium" id="is-info"><i class="fas fa-dice-d8">D8</i></button><span
+                id="d8"></span>
+        </div>
+        <div>
+            <button class="button is-success is-medium" id="is-success"><i class="fas fa-dice-d10">D10</i></button><span
+                id="d10"></span>
+            <button class="button is-warning is-medium" id="is-warning"><i class="fas fa-dice-d12">D12</i></button><span
+                id="d12"></span>
+            <button class="button is-danger is-medium" id="is-danger"><i class="fas fa-dice-d20">D20</i></button><span
+                id="d20"></span>
+        </div>
+    </article>
+    <br>
+    <aside class="columns">
+        <div class="column is-one-third" id="money">
+            <ul>
+                <li>Copper: <span id="copperAmt">0</span></li>
+                <li><button id="copper"><i class="fas fa-balance-scale"></i>Add 1</button><button id="copper5"><i class="fas fa-balance-scale"></i>Add 5</button><button id="copper10"><i class="fas fa-balance-scale"></i>Add 10</button></li>
+                <li>Silver: <span id="silverAmt">0</span></li>
+                <li><button id="silver"><i class="fas fa-balance-scale"></i>Add</button><button id="silver5"><i class="fas fa-balance-scale"></i>Add 5</button><button id="silver10"><i class="fas fa-balance-scale"></i>Add 10</button></li>
+                <li>Gold: <span id="goldAmt">0</span></li>
+                <li><button id="gold"><i class="fas fa-balance-scale"></i>Add</button><button id="gold5"><i class="fas fa-balance-scale"></i>Add 5</button><button id="gold10"><i class="fas fa-balance-scale"></i>Add 10</button></li>
+                <li>Platinum: <span id="platAmt">0</span></li>
+                <li><button id="plat"><i class="fas fa-balance-scale"></i>Add</button><button id="plat5"><i class="fas fa-balance-scale"></i>Add 5</button><button id="plat10"><i class="fas fa-balance-scale"></i>Add 10</button></li>
+            </ul>
+        </div>
+        <div class="column is-two-thirds" id="bag">
+            <h2>Bag<button id="bags"><i class="far fa-save"></i></button></h2>
+            <textarea name="bag" id="bagactual" cols="30" rows="10"></textarea>
+        </div>
+    </aside>
+    <script src="./assets/bag.js"></script>
+    <script src="./assets/script-money.js"></script>
+    <script src="./assets/fighter.js"></script>
+</body>
+
+</html>

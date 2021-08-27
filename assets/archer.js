@@ -27,11 +27,11 @@ const divName = document.getElementById('name')
 
 if (!localStorage.getItem('level')) {
     var levelCtr = 1;
-    var healthC = 40;
+    var healthC = 36;
     var strengthC = 8;
-    var dexterityC = 8;
-    var athleticsC = 8;
-    var knowledgeC = 8;
+    var dexterityC = 16;
+    var athleticsC = 16;
+    var knowledgeC = 12;
     var wisdomC = 8;
     var speedC = 8;
     localStorage.setItem('level', levelCtr);
@@ -86,11 +86,11 @@ levelUp.addEventListener('click', function () {
     else {
         levelUp.disabled = true;
     }
-    healthC = healthC + Math.floor(Math.random() * 12 + 2);
+    healthC = healthC + Math.floor(Math.random() * 14 + 2);
     strengthC = strengthC + Math.floor(Math.random() * 6 + 1);
-    dexterityC = dexterityC + Math.floor(Math.random() * 6 + 1);
-    athleticsC = athleticsC + Math.floor(Math.random() * 6 + 1);
-    knowledgeC = knowledgeC + Math.floor(Math.random() * 6 + 1);
+    dexterityC = dexterityC + Math.floor(Math.random() * 16 + 1);
+    athleticsC = athleticsC + Math.floor(Math.random() * 16 + 1);
+    knowledgeC = knowledgeC + Math.floor(Math.random() * 10 + 1);
     wisdomC = wisdomC + Math.floor(Math.random() * 6 + 1);
     strength.innerHTML = strengthC;
     health.innerHTML = healthC;
@@ -100,7 +100,7 @@ levelUp.addEventListener('click', function () {
     knowledge.innerHTML = knowledgeC;
     wisdom.innerHTML = wisdomC;
     if (levelCtr.toString().includes('5' || '0')) {
-        speedC = speedC + Math.floor(Math.random() * 4 + 2);
+        speedC = speedC + Math.floor(Math.random() * 8 + 2);
         return speed.innerHTML = speedC;
     }
     

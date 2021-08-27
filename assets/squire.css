@@ -1,0 +1,120 @@
+:root{
+    --primary-color: #102336;
+    --secondary-color: #5d88bb;
+    --tertiarty-color: #b3cbe4;
+    --fourth-color: #d6d6d6;
+    --fifth-color: #a1a8b2;
+}
+body{
+    background-color: var(--primary-color);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h2{
+    font-size: x-large;
+    color: var(--fifth-color);
+    font-weight: lighter;
+    text-shadow: 2px 2px 2px rgb(114, 112, 112);
+}
+#name{
+    display: flex;
+    font-size: xx-large;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+ul li{
+    font-weight: lighter;
+    font-size: 20px;
+    color: var(--fifth-color);
+    line-height: 2rem;
+}
+#stats{
+    font-size: 30px;
+    text-decoration:underline var(--tertiarty-color);
+    text-shadow: 1px 1px 2px rgb(12, 10, 10);
+}
+main ul li p{
+    display: inline-block;
+}
+#up, button{
+    background-color: var(--secondary-color);
+    color: var(--fourth-color);
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 15px;
+    box-shadow: 2px 1px 8px rgb(10, 10, 9);
+}
+textarea{
+    background-color: var(--secondary-color);
+    border:3px solid var(--fourth-color);
+    border-radius: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    max-width: 80%;
+    box-shadow: 3px 3px 3px var(--fourth-color);
+}
+article{
+    background-color: var(--fifth-color);
+    border-radius: 25px;
+    box-shadow: 7px 7px 5px black;
+  
+}
+.button{
+    margin: 8px;
+    border-radius: 25px;
+    padding: 25px;
+    box-shadow: 5px 5px 10px black;
+}
+
+article span{
+    margin-top: 10px;
+    margin-left: 15px;
+    display: inline-block;
+    padding: 10px;
+    color: var(--primary-color);
+    font-weight: bolder;
+    background-color: var(--fifth-color);
+    border-radius: 50px;
+    font-size: larger;
+    box-shadow: 5px 5px 10px black;
+
+}
+.hide{
+    display: none;
+}
+aside h2{
+    margin-right: 10px;
+}
+aside button{
+    margin: 3px;
+    background-color: var(--fifth-color);
+    color: var(--primary-color);
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: bolder;
+    box-shadow: 2px 2px 3px rgb(5, 5, 5);
+}
+
+@media screen and (max-width: 380px) {
+    article{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .button{
+        font-size: smaller;
+        padding: 8px;
+        margin: 2px;
+    }
+    article span{
+        font-size: smaller;
+        margin-left: 1px;
+    }
+}
+@media screen and (max-width: 325px) {
+    article{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
+}

@@ -5,8 +5,8 @@ const bagSave = document.getElementById('bags');
 
 
 abilitiesSave.addEventListener('click', function(){
-    var ableSave = abilities.value;
-    localStorage.setItem('abilities', ableSave)
+    var ableSave = abilities.value.split('\n');
+    localStorage.setItem('abilities', ableSave.join('\n'))
 })
 
 bagSave.addEventListener('click', function(){
@@ -17,7 +17,7 @@ bagSave.addEventListener('click', function(){
 window.addEventListener('DOMContentLoaded', function(){
     var ableLoad = localStorage.getItem('abilities');
     var bagLoad = localStorage.getItem('bag');
-
+    
     bag.innerText = bagLoad;
     abilities.innerText = ableLoad;
 })
