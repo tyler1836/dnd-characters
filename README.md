@@ -4,4 +4,4 @@
 - Leveling up uses a random multiplier to add stats
 - Text box for saving abilities and items in a bag
 - Dice rolling for each dice used in D&D
-### [Try it out here](github.io/tyler1836/dnd-characters)
+### [Try it out here](https://tyler1836.github.io/dnd-characters/)
